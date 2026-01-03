@@ -20,6 +20,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 
     @Override
     public Employee save(Employee theEmployee) {
+        // merge will either insert or update based on the presence of the id
         return entityManager.merge(theEmployee);
     }
 
