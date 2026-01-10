@@ -2,9 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <title>Thymeleaf Demo</title>
+    <link rel="stylesheet" th:href="@{/css/demo.css}">
 </head>
     <body>
         <h1>Hello World!</h1>
-        <p>Current date and time: <span th:text="${theDate}"></span></p>
+        <p class="funny">Current date and time:
+            <span th:text="${theDate}" />
+        </p>
     </body>
 </html>
