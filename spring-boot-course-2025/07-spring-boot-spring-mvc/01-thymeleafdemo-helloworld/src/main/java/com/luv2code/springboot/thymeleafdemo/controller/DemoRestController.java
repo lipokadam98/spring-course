@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class DemoRestController {
 
-    //Create a mapping for "/hello"
+    //Create a mapping for "/hello" endpoint
     @GetMapping("/hello")
     public String sayHello(Model model) {
         model.addAttribute("theDate", new java.util.Date());
