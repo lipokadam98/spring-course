@@ -92,7 +92,6 @@ public class CruddemoApplication {
 		int theId = 1;
 		Instructor tempInstructor = appDAO.findInstructorById(theId);
 
-		System.out.println("tempInstructor: "+ tempInstructor);
 	}
 
 	private void deleteInstructorById(AppDAO appDAO) {
