@@ -91,7 +91,6 @@ public class CruddemoApplication {
 	private void findInstructorById(AppDAO appDAO) {
 		int theId = 1;
 		Instructor tempInstructor = appDAO.findInstructorById(theId);
-
 	}
 
 	private void deleteInstructorById(AppDAO appDAO) {
