@@ -22,4 +22,9 @@ public class MyDemoLoggingAspect {
     public void beforeAddAccountAdvice() {
         System.out.println(getClass() + ": Before adding account to the database");
     }
+
+    @Before("forAllDaoMethods()")
+    public void performApiAnalytics() {
+        System.out.println(getClass() + ": Performing API analytics");
+    }
 }
